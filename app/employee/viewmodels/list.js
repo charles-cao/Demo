@@ -46,6 +46,13 @@
             for (i in t) {
                 self.employees.push(ko.mapping.fromJS(t[i]));
             };
+        },
+        clear: function() {
+            var self = this;
+            self.id("");
+            self.name("");
+            self.age("");
+            self.search();
         }
     }
 });
