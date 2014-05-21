@@ -80,11 +80,11 @@
             var newlist = [];
             var list = employees.get();
             for (i in list) {
-                if (employee.id != "" && parseInt(employee.id) && list[i].id != parseInt(employee.id))
+                if (employee.id != "" && list[i].id != parseInt(employee.id))
                     continue;
                 if (employee.name != "" && employee.name != null && list[i].name != employee.name)
                     continue;
-                if (employee.age != "" && parseInt(employee.age) && list[i].age != parseInt(employee.age))
+                if (employee.age != "" && list[i].age != parseInt(employee.age))
                     continue;
                 newlist.push(list[i]);
             };
